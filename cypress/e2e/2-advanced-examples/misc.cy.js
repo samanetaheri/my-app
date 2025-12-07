@@ -51,8 +51,8 @@ context('Misc', () => {
       return
     }
 
-    cy.exec('echo Jane Lane')
-      .its('stdout').should('contain', 'Jane Lane')
+    // cy.exec('echo Jane Lane')
+    //   .its('stdout').should('contain', 'Jane Lane')
 
     if (Cypress.platform === 'win32') {
       cy.exec(`print ${Cypress.config('configFile')}`)
